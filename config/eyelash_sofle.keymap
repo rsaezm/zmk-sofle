@@ -111,8 +111,8 @@
         Simbolo {
             bindings = <
 &kp TILDE  &kp EXCLAMATION  &kp AT_SIGN  &kp POUND   &kp DOLLAR   &kp PERCENT        &mmv MOVE_UP     &kp CARET  &kp AMPERSAND   &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&trans     &none            &none        &none       &none        &none              &mmv MOVE_DOWN   &none      &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DEL
-&trans     &none            &none        &none       &none        &none              &mmv MOVE_LEFT   &none      &none           &none            &none                 &kp GRAVE              &trans
+&trans     &none            &none        &none       &none        &none              &mmv MOVE_DOWN   &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DEL
+&trans     &none            &none        &none       &none        &none              &mmv MOVE_LEFT   &kp PLUS   &kp MINUS       &kp ASTRK        &kp FSLH              &kp GRAVE              &trans
 &trans     &kp K_UNDO       &kp K_CUT    &kp K_COPY  &kp K_PASTE  &kp C_AC_SEARCH    &mmv MOVE_RIGHT  &kp TILDE  &none           &none            &none                 &none                  &trans
 &none      &trans           &trans       &trans      &mo 3        &trans             &mkp LCLK        &trans     &none           &trans           &none                 &none
             >;
