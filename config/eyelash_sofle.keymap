@@ -85,11 +85,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8     &kp N9     &kp N0            &kp BACKSLASH
-&kp ESCAPE  &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I      &kp O      &kp P             &kp BACKSPACE
-&kp TAB     &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K      &kp L      &kp SINGLE_QUOTE  &kp SEMICOLON
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH          &kp ENTER
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 1   &kp SPACE    &kp ENTER        &kp ENTER  &mo 2   &mo 3      &kp MINUS  &kp EQUAL
+&kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8         &kp N9         &kp N0             &kp BACKSLASH
+&kp ESCAPE  &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O          &kp P              &kp BACKSPACE
+&kp TAB     &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L          &kp SINGLE_QUOTE   &kp ENTER
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT        &kp FSLH           &kp ENTER
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &mo 2   &kp RIGHT_WIN  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
