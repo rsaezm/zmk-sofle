@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
@@ -123,9 +124,9 @@
 
         Sistema {
             bindings = <
-&bt BT_CLR                     &bt BT_SEL 0                    &bt BT_SEL 1                      &bt BT_SEL 2                       &bt BT_SEL 3     &bt BT_SEL 4       &none  &none  &none  &none  &none  &none  &none
-&rgb_ug RGB_OFF                &rgb_ug RGB_ON                  &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &none  &none  &none  &none  &none  &none  &none
-&none                          &none                           &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &none  &none  &none  &none  &none  &none  &none
+&out OUT_TOG                   &bt BT_SEL 0                    &bt BT_SEL 1                      &bt BT_SEL 2                       &bt BT_SEL 3     &bt BT_SEL 4       &none  &none  &none  &none  &none  &none  &none
+&none                          &none                           &rgb_ug RGB_EFR                   &rgb_ug RGB_EFF                    &rgb_ug RGB_HUD  &rgb_ug RGB_HUI    &none  &none  &none  &none  &none  &none  &none
+&rgb_ug RGB_OFF                &rgb_ug RGB_ON                  &rgb_ug RGB_SPD                   &rgb_ug RGB_SPI                    &rgb_ug RGB_SAD  &rgb_ug RGB_SAI    &none  &none  &none  &none  &none  &none  &none
 &rgb_ug RGB_COLOR_HSB(0,4,98)  &rgb_ug RGB_COLOR_HSB(0,96,50)  &rgb_ug RGB_COLOR_HSB(240,97,49)  &rgb_ug RGB_COLOR_HSB(107,100,48)  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI    &none  &none  &none  &none  &none  &none  &none
 &none                          &none                           &none                             &none                              &none            &none              &none  &none  &none  &none  &none  &none
             >;
