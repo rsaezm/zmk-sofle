@@ -117,6 +117,8 @@
 &none   &none         &none         &none             &none           &none             &none  &none   &none     &none         &none      &none   &none
 &none   &none         &none         &none             &none           &none             &none  &none   &none     &none         &none      &none
             >;
+
+            label = "maxtend";
         };
 
         Ajustes {
@@ -140,6 +142,8 @@
 &none   &bt BT_CLR     &bt BT_CLR_ALL  &out OUT_USB   &out OUT_USB   &none            &none  &none   &none   &none   &none   &none   &none
 &none   &trans         &trans          &none          &none          &none            &none  &none   &none   &none   &none   &none
             >;
+
+            label = "System";
         };
 
         lower_layer {
@@ -150,6 +154,8 @@
 &trans  &kp F11  &kp F12  &kp C_AL_CALC  &trans  &trans     &trans  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3        &kp KP_EQUAL  &trans
 &trans  &trans   &trans   &trans         &trans  &trans     &trans  &trans           &trans     &trans     &trans           &kp KP_DOT
             >;
+
+            label = "lower";
         };
 
         mouse_layer {
@@ -160,16 +166,20 @@
 &trans  &none   &none     &none     &none     &none     &none  &none           &none           &none           &none            &none   &trans
 &none   &trans  &trans    &trans    &trans    &trans    &none  &trans          &trans          &trans          &trans           &trans
             >;
+
+            label = "mouse";
         };
 
         numspace_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans                &trans                 &trans
+&trans  &kp EXCLAMATION  &kp AT           &kp HASH         &kp DOLLAR       &kp PERCENT        &trans  &kp CARET        &kp AMPERSAND    &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &trans  &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9       &kp KP_NUMBER_0        &trans
+&trans  &kp KP_MINUS     &kp LBKT         &kp RBKT         &kp LBRC         &kp RBRC           &trans  &trans           &trans           &kp LESS_THAN    &kp GREATER_THAN      &trans                 &trans
+&trans  &trans           &trans           &trans           &trans           &trans             &trans  &trans           &trans           &trans           &trans                &trans
             >;
+
+            label = "number";
         };
 
         Funciones {
