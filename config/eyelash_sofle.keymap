@@ -89,7 +89,7 @@
 &kp ESCAPE  &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O      &kp P             &kp BACKSPACE
 &lt 2 TAB   &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L      &kp SINGLE_QUOTE  &lt 2 ENTER
 &kp LSHFT   &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT    &kp SEMICOLON     &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 7   &kp SPACE    &kp ENTER        &kp SPACE  &mo 7   &kp RIGHT_ALT  &kp EQUAL  &kp MINUS
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &mo 8   &kp SPACE    &kp ENTER        &kp SPACE  &mo 8   &kp RIGHT_ALT  &kp EQUAL  &kp MINUS
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -103,7 +103,7 @@
 &kp ESCAPE  &kp Q           &kp W           &kp E               &kp R             &kp T        &kp DOWN_ARROW   &kp Y      &kp U              &kp I                &kp O                &kp P                       &kp BACKSPACE
 &lt 2 TAB   &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G        &kp LEFT_ARROW   &kp H      &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_CONTROL L  &mt RIGHT_GUI SINGLE_QUOTE  &kp ENTER
 &kp LSHFT   &kp Z           &kp X           &kp C               &kp V             &kp B        &kp RIGHT_ARROW  &kp N      &kp M              &kp COMMA            &kp DOT              &kp SEMICOLON               &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN        &mo 7             &kp SPACE    &kp ENTER        &kp SPACE  &mo 7              &kp RIGHT_ALT        &kp EQUAL            &kp MINUS
+&kp C_MUTE  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN        &mo 8             &kp SPACE    &kp ENTER        &kp SPACE  &mo 8              &kp RIGHT_ALT        &kp EQUAL            &kp MINUS
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -152,13 +152,23 @@
             >;
         };
 
+        mouse_layer {
+            bindings = <
+&trans  &trans  &trans    &trans    &trans    &trans    &none  &trans          &trans          &trans          &trans           &trans  &trans
+&trans  &none   &none     &none     &none     &none     &none  &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &none   &trans
+&trans  &none   &mkp MB2  &mkp MB3  &mkp MB1  &none     &none  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none   &trans
+&trans  &none   &none     &none     &none     &none     &none  &none           &none           &none           &none            &none   &trans
+&none   &trans  &trans    &trans    &trans    &trans    &none  &trans          &trans          &trans          &trans           &trans
+            >;
+        };
+
         Funciones {
             bindings = <
 &none   &trans  &trans   &trans   &trans   &trans    &mmv MOVE_UP     &trans         &trans    &trans          &trans     &trans      &none
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &none     &mmv MOVE_DOWN   &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp INSERT  &kp DEL
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &none     &mmv MOVE_LEFT   &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none       &trans
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &none     &mmv MOVE_RIGHT  &none          &none     &none           &none      &none       &trans
-&none   &trans  &trans   &trans   &none    &trans    &mkp LCLK        &trans         &mo 7     &trans          &none      &none
+&none   &trans  &trans   &trans   &none    &trans    &mkp LCLK        &trans         &mo 8     &trans          &none      &none
             >;
 
             display-name = "FUNCION";
@@ -171,7 +181,7 @@
 &trans     &none            &none        &none       &none        &none              &mmv MOVE_DOWN   &kp EQUAL  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DEL
 &trans     &none            &none        &none       &none        &none              &mmv MOVE_LEFT   &kp PLUS   &kp MINUS       &kp ASTRK        &kp FSLH              &kp GRAVE              &trans
 &trans     &kp K_UNDO       &kp K_CUT    &kp K_COPY  &kp K_PASTE  &kp C_AC_SEARCH    &mmv MOVE_RIGHT  &kp TILDE  &none           &none            &none                 &none                  &trans
-&none      &trans           &trans       &trans      &mo 7        &trans             &mkp LCLK        &trans     &none           &trans           &none                 &none
+&none      &trans           &trans       &trans      &mo 8        &trans             &mkp LCLK        &trans     &none           &trans           &none                 &none
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
