@@ -118,7 +118,7 @@
 &none   &none         &none         &none             &none           &none             &none  &none          &none     &none         &none      &none
             >;
 
-            label = "maxtend";
+            label = "momentary";
         };
 
         Ajustes {
