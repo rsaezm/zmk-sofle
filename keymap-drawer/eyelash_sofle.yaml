@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-tab$$', h: maxtend}
+  - {t: '$$mdi:keyboard-tab$$', h: momentary}
   - A
   - S
   - D
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '''', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', h: maxtend}
+  - {t: '$$mdi:keyboard-return$$', h: momentary}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -92,7 +92,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-tab$$', h: maxtend}
+  - {t: '$$mdi:keyboard-tab$$', h: momentary}
   - {t: A, h: LEFT WIN}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
   - {t: D, h: '$$mdi:apple-keyboard-control$$'}
@@ -104,7 +104,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-control$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: '''', h: RIGHT GUI, s: '"'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: momentary}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -130,7 +130,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '=', s: +}
   - {t: '-', s: _}
-  maxtend:
+  momentary:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -151,11 +151,11 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-up$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgUp
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
   - $$mdi:backspace-reverse-outline$$
   - {type: held}
   - LEFT WIN
@@ -164,20 +164,20 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:pan-down$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - {type: held alternate}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - UNDO
+  - CUT
+  - COPY
+  - PASTE
+  - $$mdi:apple-finder$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '~'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
