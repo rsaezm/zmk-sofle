@@ -496,7 +496,7 @@ layers:
   - KP 0
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - KP EQUAL
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - '{'
@@ -506,7 +506,7 @@ layers:
   - KP PLUS
   - <
   - '>'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - KP EQUAL
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
