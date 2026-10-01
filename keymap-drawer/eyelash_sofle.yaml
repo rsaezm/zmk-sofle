@@ -187,11 +187,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LEFT WIN
-  - {t: '$$mdi:keyboard-space$$', h: number}
-  - {t: '$$mdi:keyboard-return$$', h: FUNCION}
+  - {t: '$$mdi:keyboard-space$$', h: SIMBOLO}
+  - {t: '$$mdi:keyboard-return$$', h: number}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: QWERTY}
-  - {t: '$$mdi:keyboard-space$$', h: QWERTY}
+  - {t: '$$mdi:keyboard-return$$', h: mouse}
+  - {t: '$$mdi:keyboard-space$$', h: FUNCION}
   - $$mdi:apple-keyboard-option$$
   - {t: '=', s: +}
   - {t: '-', s: _}
@@ -317,7 +317,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -448,7 +448,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: SIMBOLO, type: held}
