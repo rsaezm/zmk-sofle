@@ -503,10 +503,10 @@ layers:
   - KP MINUS
   - {t: '$$mdi:transfer$$', type: trans}
   - KP PLUS
-  - KP PLUS
+  - KP EQUAL
   - KP MULTIPLY
   - KP DIVIDE
-  - KP EQUAL
+  - KP DOT
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
