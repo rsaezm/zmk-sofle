@@ -83,13 +83,25 @@
     keymap {
         compatible = "zmk,keymap";
 
+        maxtend_layer {
+            bindings = <
+&trans  &trans        &trans        &trans            &trans          &trans            &none  &trans         &trans    &trans        &trans     &trans           &trans
+&none   &none         &none         &none             &none           &msc SCRL_UP      &none  &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp PRINTSCREEN  &kp DEL
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &msc SCRL_DOWN    &none  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp GRAVE        &trans
+&none   &kp K_UNDO    &kp K_CUT     &kp K_COPY        &kp K_PASTE     &kp K_FIND        &none  &kp TILDE      &none     &none         &none      &none            &none
+&none   &none         &none         &none             &mo 7           &mo 8             &none  &mo 8          &mo 7     &none         &none      &none
+            >;
+
+            label = "momentary";
+        };
+
         querty_layer {
             bindings = <
-&kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4     &kp N5         &kp UP_ARROW     &kp N6     &kp N7  &kp N8         &kp N9     &kp N0            &kp SLASH
-&kp ESCAPE  &kp Q      &kp W         &kp E         &kp R      &kp T          &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O      &kp P             &kp BACKSPACE
-&lt 2 TAB   &kp A      &kp S         &kp D         &kp F      &kp G          &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L      &kp SINGLE_QUOTE  &lt 2 ENTER
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp V      &kp B          &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT    &kp SEMICOLON     &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &lt 3 TAB  &lt 6 SPACE    &kp ENTER        &kp SPACE  &mo 3   &kp RIGHT_ALT  &kp EQUAL  &kp MINUS
+&kp GRAVE   &kp N1     &kp N2        &kp N3        &kp N4     &kp N5         &kp UP_ARROW     &kp N6       &kp N7       &kp N8         &kp N9     &kp N0            &kp SLASH
+&kp ESCAPE  &kp Q      &kp W         &kp E         &kp R      &kp T          &kp DOWN_ARROW   &kp Y        &kp U        &kp I          &kp O      &kp P             &kp BACKSPACE
+&lt 0 TAB   &kp A      &kp S         &kp D         &kp F      &kp G          &kp LEFT_ARROW   &kp H        &kp J        &kp K          &kp L      &kp SINGLE_QUOTE  &lt 0 ENTER
+&kp LSHFT   &kp Z      &kp X         &kp C         &kp V      &kp B          &kp RIGHT_ARROW  &kp N        &kp M        &kp COMMA      &kp DOT    &kp SEMICOLON     &kp RIGHT_SHIFT
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp LEFT_WIN  &lt 3 TAB  &lt 4 SPACE    &kp ENTER        &lt 5 SPACE  &lt 6 ENTER  &kp RIGHT_ALT  &kp EQUAL  &kp MINUS
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -101,24 +113,12 @@
             bindings = <
 &kp GRAVE   &kp N1          &kp N2          &kp N3              &kp N4            &kp N5         &kp UP_ARROW     &kp N6       &kp N7             &kp N8               &kp N9               &kp N0                      &kp SLASH
 &kp ESCAPE  &kp Q           &kp W           &kp E               &kp R             &kp T          &kp DOWN_ARROW   &kp Y        &kp U              &kp I                &kp O                &kp P                       &kp BACKSPACE
-&lt 2 TAB   &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp LEFT_ARROW   &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_CONTROL L  &mt RIGHT_GUI SINGLE_QUOTE  &lt 2 ENTER
+&lt 0 TAB   &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp LEFT_ARROW   &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_CONTROL K  &mt RIGHT_CONTROL L  &mt RIGHT_GUI SINGLE_QUOTE  &lt 0 ENTER
 &kp LSHFT   &kp Z           &kp X           &kp C               &kp V             &kp B          &kp RIGHT_ARROW  &kp N        &kp M              &kp COMMA            &kp DOT              &kp SEMICOLON               &kp RIGHT_SHIFT
-&kp C_MUTE  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN        &lt 6 SPACE       &lt 8 ENTER    &kp ENTER        &lt 0 ENTER  &lt 0 SPACE        &kp RIGHT_ALT        &kp EQUAL            &kp MINUS
+&kp C_MUTE  &kp LCTRL       &kp LEFT_ALT    &kp LEFT_WIN        &lt 4 SPACE       &lt 6 ENTER    &kp ENTER        &lt 1 ENTER  &lt 1 SPACE        &kp RIGHT_ALT        &kp EQUAL            &kp MINUS
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
-        };
-
-        maxtend_layer {
-            bindings = <
-&trans  &trans        &trans        &trans            &trans          &trans            &none  &trans         &trans    &trans        &trans     &trans           &trans
-&none   &none         &none         &none             &none           &msc SCRL_UP      &none  &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp PRINTSCREEN  &kp DEL
-&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &msc SCRL_DOWN    &none  &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp GRAVE        &trans
-&none   &kp K_UNDO    &kp K_CUT     &kp K_COPY        &kp K_PASTE     &kp K_FIND        &none  &kp TILDE      &none     &none         &none      &none            &none
-&none   &none         &none         &none             &mo 4           &mo 5             &none  &mo 5          &mo 4     &none         &none      &none
-            >;
-
-            label = "momentary";
         };
 
         Simbolo {
@@ -132,31 +132,6 @@
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
             display-name = "SIMBOLO";
-        };
-
-        settings_layer {
-            display-name = "Settings";
-            bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans          &none  &trans           &trans           &trans           &trans           &trans           &trans
-&trans  &to 0         &to 1         &none         &none         &none           &none  &rgb_ug RGB_ON   &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &rgb_ug RGB_OFF  &rgb_ug RGB_SAD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG
-&mo 5   &none         &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &none           &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none            &none            &none            &none
-&none   &trans        &trans        &trans        &trans        &trans          &none  &trans           &trans           &trans           &trans           &trans
-            >;
-
-            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
-        };
-
-        system_layer {
-            bindings = <
-&trans  &trans         &trans          &trans         &trans         &trans           &none  &trans  &trans  &trans  &trans  &trans  &trans
-&none   &none          &none           &none          &none          &none            &none  &none   &none   &none   &none   &none   &none
-&none   &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none  &none   &none   &none   &none   &none   &none
-&none   &bt BT_CLR     &bt BT_CLR_ALL  &out OUT_USB   &out OUT_USB   &none            &none  &none   &none   &none   &none   &none   &none
-&none   &trans         &trans          &none          &none          &none            &none  &none   &none   &none   &none   &none
-            >;
-
-            label = "System";
         };
 
         number_layer {
@@ -194,6 +169,31 @@
 
             display-name = "FUNCION";
             sensor-bindings = <&rsr_vol &rsr_trans>;
+        };
+
+        settings_layer {
+            display-name = "Settings";
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans          &none  &trans           &trans           &trans           &trans           &trans           &trans
+&trans  &to 1         &to 2         &none         &none         &none           &none  &rgb_ug RGB_ON   &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF  &none
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &rgb_ug RGB_OFF  &rgb_ug RGB_SAD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR  &rgb_ug RGB_TOG
+&mo 8   &none         &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &none           &none  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD  &none            &none            &none            &none
+&none   &trans        &trans        &trans        &trans        &trans          &none  &trans           &trans           &trans           &trans           &trans
+            >;
+
+            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
+        };
+
+        system_layer {
+            bindings = <
+&trans  &trans         &trans          &trans         &trans         &trans           &none  &trans  &trans  &trans  &trans  &trans  &trans
+&none   &none          &none           &none          &none          &none            &none  &none   &none   &none   &none   &none   &none
+&none   &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4    &none  &none   &none   &none   &none   &none   &none
+&none   &bt BT_CLR     &bt BT_CLR_ALL  &out OUT_USB   &out OUT_USB   &none            &none  &none   &none   &none   &none   &none   &none
+&none   &trans         &trans          &none          &none          &none            &none  &none   &none   &none   &none   &none
+            >;
+
+            label = "System";
         };
     };
 };
