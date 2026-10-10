@@ -57,11 +57,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LEFT WIN
-  - {t: '$$mdi:keyboard-space$$', h: SIMBOLO}
-  - {t: '$$mdi:keyboard-return$$', h: number}
+  - {t: '$$mdi:keyboard-return$$', h: SIMBOLO}
+  - {t: '$$mdi:keyboard-space$$', h: number}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: mouse}
-  - {t: '$$mdi:keyboard-space$$', h: FUNCION}
+  - {t: '$$mdi:keyboard-space$$', h: mouse}
+  - {t: '$$mdi:keyboard-return$$', h: FUNCION}
   - $$mdi:apple-keyboard-option$$
   - {t: '=', s: +}
   - {t: '-', s: _}
@@ -122,11 +122,11 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - LEFT WIN
-  - {t: '$$mdi:keyboard-space$$', h: SIMBOLO}
-  - {t: '$$mdi:keyboard-return$$', h: number}
+  - {t: '$$mdi:keyboard-return$$', h: SIMBOLO}
+  - {t: '$$mdi:keyboard-space$$', h: number}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: mouse}
-  - {t: '$$mdi:keyboard-space$$', h: FUNCION}
+  - {t: '$$mdi:keyboard-space$$', h: mouse}
+  - {t: '$$mdi:keyboard-return$$', h: FUNCION}
   - $$mdi:apple-keyboard-option$$
   - {t: '=', s: +}
   - {t: '-', s: _}
